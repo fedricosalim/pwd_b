@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Reservation Hotel Room</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        form {
+            /* Lebar diubah menjadi 100% agar memenuhi halaman */
+            width: 100%; 
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            padding: 0 5px;
+            color: #555;
+        }
+        p {
+            margin: 10px 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+        input[type="text"], select {
+            width: 250px;
+            padding: 4px;
+        }
+        input[type="radio"] {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Reservation Hotel Room</h2>
+
+<form action="" method="post">
+    <fieldset>
+        <legend>Personal Data</legend>
+        <p>
+            <label for="name">1. Name</label>
+            <input type="text" id="name" name="name" />
+        </p>
+        <p>
+            <label for="gender">2. Gender</label>
+            <input type="text" id="gender" name="gender" />
+        </p>
+        <p>
+            <label for="email">3. Email Address</label>
+            <input type="text" id="email" name="email" />
+        </p>
+        <p>
+            <label for="telp">4. Telp Number</label>
+            <input type="text" id="telp" name="telp" />
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Reservation Room form</legend>
+        <p>
+            <label for="res_name">1. Reservation Name</label>
+            <input type="text" id="res_name" name="res_name" />
+        </p>
+        <p>
+            <label for="booking_date">2. Booking date</label>
+            <input type="text" id="booking_date" name="booking_date" />
+        </p>
+        <p>
+            <label for="room_type">3. Room Type</label>
+            <select id="room_type" name="room_type">
+                <option>Deluxe</option>
+                <option>Suite</option>
+                <option>Standard</option>
+            </select>
+        </p>
+        <p>
+            <label for="bed_type">4. Bed Type</label>
+            <select id="bed_type" name="bed_type">
+                <option>Single bed</option>
+                <option>Double bed</option>
+            </select>
+        </p>
+        <p>
+            <label>5. Breakfast</label>
+            <input type="radio" name="breakfast" id="with_breakfast" value="with" /> <label for="with_breakfast" style="display:inline;">With Breakfast</label>
+            <input type="radio" name="breakfast" id="no_breakfast" value="without" /> <label for="no_breakfast" style="display:inline;">Without Breakfast</label>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment</legend>
+        <p>
+            <label for="check_in">1. Check in date</label>
+            <input type="text" id="check_in" name="check_in" />
+        </p>
+        <p>
+            <label for="check_out">2. Check out date</label>
+            <input type="text" id="check_out" name="check_out" />
+        </p>
+        <p>
+            <label for="payment_method">3. Payment Method</label>
+            <select id="payment_method" name="payment_method">
+                <option>cash</option>
+                <option>credit card</option>
+                <option>debit</option>
+            </select>
+        </p>
+    </fieldset>
+
+    <input type="submit" value="submit" />
+</form>
+
+</body>
+</html>
