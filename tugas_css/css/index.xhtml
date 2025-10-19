@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Reservation Hotel Room</h1>
+
+    <form action="#" method="post">
+      <table class="form-table">
+        
+        <tr>
+          <td colspan="2" class="section-header">Personal Data</td>
+        </tr>
+        <tr>
+          <td><label for="name">1. Name</label></td>
+          <td><input type="text" id="name" name="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">2. Gender</label></td>
+          <td><input type="text" id="gender" name="gender" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">3. Email Address</label></td>
+          <td><input type="text" id="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="telp">4. Telp Number</label></td>
+          <td><input type="text" id="telp" name="telp" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="section-header">Reservation Room Item</td>
+        </tr>
+        <tr>
+          <td><label for="res_date">1. Reservation Dated</label></td>
+          <td><input type="text" id="res_date" name="res_date" /></td>
+        </tr>
+        <tr>
+          <td><label for="book_date">2. Booking date</label></td>
+          <td><input type="text" id="book_date" name="book_date" /></td>
+        </tr>
+        <tr>
+          <td><label for="room_type">3. Room Type</label></td>
+          <td>
+            <select id="room_type" name="room_type">
+              <option value="smart">Smart</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="suite">Suite</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="bed_type">4. Bed Type</label></td>
+          <td>
+            <select id="bed_type" name="bed_type">
+              <option value="single">Single Bed</option>
+              <option value="double">Double Bed</option>
+              <option value="twin">Twin Bed</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>5. Breakfast</td>
+          <td>
+            <input type="radio" id="bf_with" name="breakfast" value="with" />
+            <label for="bf_with">With Breakfast</label>
+            <input type="radio" id="bf_without" name="breakfast" value="without" />
+            <label for="bf_without">Without Breakfast</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="section-header">Payments</td>
+        </tr>
+        <tr>
+          <td><label for="check_in">1. Check in date</label></td>
+          <td><input type="text" id="check_in" name="check_in" /></td>
+        </tr>
+        <tr>
+          <td><label for="check_out">2. Check out date</label></td>
+          <td><input type="text" id="check_out" name="check_out" /></td>
+        </tr>
+        <tr>
+          <td><label for="payment">3. Payment Method</label></td>
+          <td>
+            <select id="payment" name="payment">
+              <option value="cash">Cash</option>
+              <option value="credit_card">Credit Card</option>
+              <option value="transfer">Bank Transfer</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: left; padding-top: 20px;">
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+
+      </table>
+    </form>
+  </div> </body>
+</html>
